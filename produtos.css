@@ -1,0 +1,102 @@
+header {
+    background: #9b9999;
+    padding: 0 20px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+
+    display: inline;
+    margin: 0 0 0 15px; /*criando espaçamento, a ordem é: cima, direita, baixo, esquerda*/
+}
+
+nav a {
+
+    text-transform: uppercase; /* deixa tudo em maiusculo*/
+    color: #000000; /* cor do nosso texto*/
+    font-weight: bold; /* deixa tudo em negrito*/
+    font-size: 22px; /* tamanho da fonte do texto*/
+    text-decoration: none; /*tirar qualquer elemento decorativo do meu texto*/
+}
+
+nav a:hover { /*mapeamento de interação do usuario, aqui podemos editar os efeitos visuais de quando o usuario passar o mouse no menu de navegação*/
+
+    color: orange;
+    text-decoration: underline; /*faz com que a linha fique sublinhada ao passar o mouse*/
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%; /*espaçamento externo*/
+    padding: 30px 20px; /*espaçamento interno*/
+    box-sizing: border-box; /*usado para calcular altura e largura dos elemntos*/
+    border: 2px solid black; /*colocando em sequencia: (width, style e color)*/
+    border-radius: 10px; /*arredonda a borda dos elementos*/
+}
+
+.produtos li:hover { /*o hover sempre sera a tag responsavel pela interação do usuario*/
+
+    border-color: orange;
+}
+
+.produtos li:active { /*a tag active entra em ação quando o mouse esta sendo pressionado*/
+
+    border-color: green;
+}
+
+.produtos li:hover h2 {
+
+    font-size: 34px;
+}
+
+.produtos h2 {
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+
+    font-size: 18px;
+}
+
+.produto-preco {
+
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+footer {
+
+    text-align: center;
+    background: black;
+    padding: 40px 0;
+
+}
+.copyright {
+
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
